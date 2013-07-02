@@ -50,4 +50,5 @@ def compareList(new_list, old_list):
 if not getOldList():
     saveTutoList(getNewList())
 
-compareList(getNewList(), getOldList())
+if compareList(getNewList(), getOldList()):
+    saveTutoList(getNewList())
